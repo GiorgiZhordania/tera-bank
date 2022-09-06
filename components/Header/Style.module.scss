@@ -1,8 +1,14 @@
 .header {
     background-color: aqua;
-
-}
-.navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 81px 327px;
+    margin: 0 auto;
+    a {
+     margin-right: 20px;
+    }
 }
+
