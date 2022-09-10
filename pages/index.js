@@ -15,11 +15,24 @@ export default function Home() {
       </Head>
       <Header/>
       <HomeSlider />
-
       <main className={Style.main}>
-        <SectionTitle title="სიახლეები" actionTitle="იხილეთ ყველა" />
+        <SectionTitle title="იპოთეკური სესხები" actionTitle="იხილეთ ყველა" />
 
         <div className={Style.newsList}>
+          <NewsCard 
+            imgSrc="./Mask.jpg" 
+            title="შეიძინე ბინა ისარგებლე სუბსიდიით"
+          />
+          <NewsCard 
+            imgSrc="./chair.jpg" 
+            title="იპოთეკური სესხი 12%-დან"
+          />
+        </div>
+      </main>
+      <main className={Style.thirdmain}>
+        <SectionTitle title="სიახლეები" actionTitle="იხილეთ ყველა" />
+
+        <div className={Style.thirdnewsList}>
           <NewsCard 
             imgSrc="./go.jpg" 
             title="მივდივართ საქართველოში — ტერაბანკი კვლავაც შიდა ტურიზმის მხარდასაჭერად"
