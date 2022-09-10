@@ -1,14 +1,24 @@
 .header {
-    background-color: aqua;
+    padding: 40px 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    padding: 81px 327px;
-    margin: 0 auto;
-    a {
-     margin-right: 20px;
+}
+
+.nav {
+    font-size: 18px;
+
+    & > * {
+        margin-left: 20px;
+    }
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+
+    & > * {
+        margin-left: 10px;
     }
 }
 
