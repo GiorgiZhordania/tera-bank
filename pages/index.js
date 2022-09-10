@@ -21,24 +21,24 @@ export default function Home() {
 
         <div className={Style.newsList}>
           <NewsCard 
-            imgSrc="https://images.pexels.com/photos/13046522/pexels-photo-13046522.jpeg" 
+            imgSrc="./go.jpg" 
             title="მივდივართ საქართველოში — ტერაბანკი კვლავაც შიდა ტურიზმის მხარდასაჭერად"
             date="3 აგვისტო, 2020"
           />
           <NewsCard 
-            imgSrc="https://images.pexels.com/photos/13046522/pexels-photo-13046522.jpeg" 
-            title="მივდივართ საქართველოში — ტერაბანკი კვლავაც შიდა ტურიზმის მხარდასაჭერად"
-            date="3 აგვისტო, 2020"
+            imgSrc="./influencer.jpg" 
+            title="ტერა ბოტინი ვერცხლის პრიზიორია - ინოვაციური ბოტის კამპანიამ საერთაშორისო ჯილდო მიიღო"
+            date="2 აგვისტო, 2020"
           />
           <NewsCard 
-            imgSrc="https://images.pexels.com/photos/13046522/pexels-photo-13046522.jpeg" 
-            title="მივდივართ საქართველოში — ტერაბანკი კვლავაც შიდა ტურიზმის მხარდასაჭერად"
-            date="3 აგვისტო, 2020"
+            imgSrc="./table.jpg" 
+            title="სუბსიდირებული იპოთეკური კრედიტების მხარდაჭერის სახელმწიფო პროგრამა"
+            date="27 ივლისი, 2020"
           />
           <NewsCard 
-            imgSrc="https://images.pexels.com/photos/13046522/pexels-photo-13046522.jpeg" 
-            title="მივდივართ საქართველოში — ტერაბანკი კვლავაც შიდა ტურიზმის მხარდასაჭერად"
-            date="3 აგვისტო, 2020"
+            imgSrc="./colored.jpg" 
+            title="ტერაბანკის ინიციატივა ბიზნესკლიენტების მხარდასაჭერად"
+            date="20 ივლისი, 2020"
           />
         </div>
       </main>

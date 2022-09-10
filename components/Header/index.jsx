@@ -19,7 +19,7 @@ export default function Header() {
         <a>ბიზნესისთვის</a>
       </nav>
       <div className={Style.actions}>
-        <Button>თერა ფეი</Button>
+        <Button>ტერაPAY</Button>
         <Button>ინტერნეტ ბანკი</Button>
         <MdSearch color="#971D62" size={30} />
         <MdPerson color="#971D62" size={30} />
