@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Currency from '../components/Currency'
 import Header from '../components/Header'
 import HomeSlider from '../components/HomeSlider'
 import NewsCard from '../components/NewsCard'
@@ -57,6 +58,15 @@ export default function Home() {
               title="ტერაბანკის ინიციატივა ბიზნესკლიენტების მხარდასაჭერად"
               date="20 ივლისი, 2020"
             />
+          </div>
+        </section>
+        <section>
+          <SectionTitle title="საუკეთესო კურსი" />
+          <br />
+
+          <div className={Style.currencyList}>
+            <Currency />
+            <Currency />
           </div>
         </section>
       </main>
