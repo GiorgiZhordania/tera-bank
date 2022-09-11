@@ -35,7 +35,7 @@ export default function Currency() {
 
         return activeTab
     }
-
+    1
     return (
         <div className={Style.currency}>
             <header>

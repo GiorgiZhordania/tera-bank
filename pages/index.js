@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import Currency from '../components/Currency'
 import Header from '../components/Header'
 import HomeSlider from '../components/HomeSlider'
@@ -76,4 +78,12 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
 }
