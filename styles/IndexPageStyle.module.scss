@@ -1,21 +1,26 @@
-.thirdmain {
-    padding: 20px;
+.main {
+    padding: 20px 140px;
+
+    section {
+        margin-bottom: 50px;
+    }
 }
 
-.thirdnewsList {
-    padding-top: 20px 140px;
+.news {
+
+}
+
+.newsList {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.main {
-    padding: 20px;
+.loans {
 }
 
-.newsList {
-    padding-top: 20px 6px;
-    display: flex;
-    justify-content: space-evenly;
-    
+.loansList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
