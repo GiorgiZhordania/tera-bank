@@ -7,8 +7,10 @@ import HomeSlider from '../components/HomeSlider'
 import NewsCard from '../components/NewsCard'
 import PromoCard from '../components/PromoCard'
 import SectionTitle from '../components/SectionTitle'
+import CustomerLoan from '../components/CustomerLoan';
 
 import Style from '../styles/IndexPageStyle.module.scss'
+import { MdPhoto } from 'react-icons/md';
 
 export default function Home() {
   return (
@@ -32,6 +34,21 @@ export default function Home() {
             <PromoCard
               imgSrc="/chair.jpg"
               title="იპოთეკური სესხი 12%-დან"
+            />
+          </div>
+        </section>
+        <section className={Style.loans}>
+          <SectionTitle title="პლასტიკური ბარათები" actionTitle="იხილეთ ყველა" />
+          <br />
+
+          <div className={Style.loansList}>
+            <PromoCard
+              imgSrc="/blackvisa.jpg"
+              title="უნივერსალური ბარათი ყველა შემთხვევისთვის"
+            />
+            <PromoCard
+              imgSrc="/goldvisa.jpg"
+              title="ვიზა ბარათები გახდი სოლიდური"
             />
           </div>
         </section>
@@ -69,6 +86,17 @@ export default function Home() {
           <div className={Style.currencyList}>
             <Currency />
             <Currency />
+          </div>
+        </section>
+        <section>
+          <SectionTitle title="სამომხმარებლო სესხი" />
+          <br/>
+          <div>
+            <CustomerLoan
+             imgSrc="/photo.jpg"
+             title="აიღე სამომხმარებლო
+              სესხი მარტივად"
+              />
           </div>
         </section>
       </main>
