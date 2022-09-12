@@ -1,11 +1,22 @@
-.button {
-    background-color: #971D62;
+.button {   
     border-radius: 5px;
     padding: 10px 15px;
     color: white;
     border: transparent;
     font-size: 14px;
     cursor: pointer;
-
+    display: flex;
     
+}
+
+.default {
+    background-color: #971D62;
+}
+
+.dark {
+    background-color:black;
+}
+
+.addon {
+    margin-right: 10px;
 }

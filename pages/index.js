@@ -8,6 +8,7 @@ import NewsCard from '../components/NewsCard'
 import PromoCard from '../components/PromoCard'
 import SectionTitle from '../components/SectionTitle'
 import CustomerLoan from '../components/CustomerLoan';
+import MobileApp from '../components/MobileApp'
 
 import Style from '../styles/IndexPageStyle.module.scss'
 import { MdPhoto } from 'react-icons/md';
@@ -94,13 +95,22 @@ export default function Home() {
           <div>
             <CustomerLoan
              imgSrc="/photo.jpg"
-             title="აიღე სამომხმარებლო
-              სესხი მარტივად"
-              />
+             title="აიღე სამომხმარებლო სესხი მარტივად"
+            />
           </div>
         </section>
+        <section className={Style.Info}>       
+           <MobileApp 
+            title="ჩვენი მობილური აპლიკაცია"
+            text="ულტრათანამედროვე დიზაინით შექმნილი,
+              თქვენზე მორგებული და მინიმალისტური
+              მობილური აპლიკაცია, რომლითაც 
+              უკმაყოფილო ვერ დარჩებით."
+            imgSrc="/colored.jpg"
+            />
+                     
+        </section>        
       </main>
-
       <footer >
         footer
       </footer>
