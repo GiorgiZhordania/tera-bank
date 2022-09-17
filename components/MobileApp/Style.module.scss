@@ -2,5 +2,22 @@
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
     gap: 40px;
+    
+    h3 {
+        color:#77BE39;
+        font-size: 40px
+    }
+    p {
+        font-size: 30px;
+    }
+    .appButton {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .photo {
+      width: 85%;
+      height: 50px;
+    }
 }
 

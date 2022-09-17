@@ -106,7 +106,7 @@ export default function Home() {
               თქვენზე მორგებული და მინიმალისტური
               მობილური აპლიკაცია, რომლითაც 
               უკმაყოფილო ვერ დარჩებით."
-            imgSrc="/colored.jpg"
+            imgSrc="/12.jpg"
             />
                      
         </section>        

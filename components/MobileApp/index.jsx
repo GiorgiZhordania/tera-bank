@@ -9,9 +9,13 @@ export default function MobileApp({imgSrc,title,text}) {
     <div className={Style.app}>
         <div className={Style.text}>
             <h3>{title}</h3>
+             <br></br>
             <p>{text}</p>
-            <Button type='dark' addon={<FaGooglePlay/>} >Google Play</Button> 
-            <Button type='dark' addon={<FaApple/>}>Google Play</Button>
+             <br></br>
+            <div className={Style.appButton}>
+                <Button type='dark' addon={<FaGooglePlay/>}>Google Play</Button>               
+                <Button type='dark' addon={<FaApple/>}>App Store</Button>
+            </div>
         </div>
         <div className={Style.photo}>
             <img src={imgSrc} alt="" />
