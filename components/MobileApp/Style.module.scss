@@ -3,21 +3,34 @@
     grid-template-columns: repeat(2 , 1fr);
     gap: 40px;
     
-    h3 {
-        color:#77BE39;
-        font-size: 40px
-    }
-    p {
-        font-size: 30px;
-    }
-    .appButton {
-        display: flex;
-        justify-content: space-around;
+    .text {
+        padding: 0 80px;
+        width: 70%;
+
+        h3 {
+            color:#77BE39;
+            font-size: 40px
+        }
+        p {
+            font-size: 16px;
+            color: gray;
+            margin: 10px 0;
+        }
+        .appButton {
+            display: flex;
+
+            button {
+                margin-right: 20px;
+            }
+        }
     }
 
     .photo {
-      width: 85%;
-      height: 50px;
+      height: 100%;
+      min-height: 400px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 }
 
