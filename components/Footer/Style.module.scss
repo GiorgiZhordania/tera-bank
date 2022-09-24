@@ -1,0 +1,28 @@
+.footer {
+    background-color: #971D62;
+    color: white;
+    padding: 50px 140px;
+
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            width: 250px;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        span {
+            margin-top: 20px;
+
+            svg {
+                margin-right: 10px;
+                opacity: 0.5;
+            }
+        }
+    }
+}

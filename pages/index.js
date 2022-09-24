@@ -1,8 +1,6 @@
-import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Currency from '../components/Currency'
-import Header from '../components/Header'
 import HomeSlider from '../components/HomeSlider'
 import NewsCard from '../components/NewsCard'
 import PromoCard from '../components/PromoCard'
@@ -11,16 +9,10 @@ import CustomerLoan from '../components/CustomerLoan';
 import MobileApp from '../components/MobileApp'
 
 import Style from '../styles/IndexPageStyle.module.scss'
-import { MdPhoto } from 'react-icons/md';
 
 export default function Home() {
   return (
     <div >
-      <Head>
-        <title>Tera Bank</title>
-
-      </Head>
-      <Header />
       <HomeSlider />
       <main className={Style.main}>
         <section className={Style.loans}>
@@ -111,9 +103,6 @@ export default function Home() {
                      
         </section>        
       </main>
-      <footer >
-        footer
-      </footer>
     </div>
   )
 }
