@@ -26,8 +26,8 @@ export default function Header(props) {
         <Image src="/logo.png" alt="Logo" width={170} height={50} />
       </Link>
       <nav className={Style.nav}>
-        <a>{t('forMe')}</a>
-        <a>{t('forBusiness')}</a>
+        <Link href='/loans'>{t('loans')}</Link>
+        <Link href='/contact'>{t('contact')}</Link>
       </nav>
       <div className={Style.actions}>
         <Button>{t('teraPay')}</Button>

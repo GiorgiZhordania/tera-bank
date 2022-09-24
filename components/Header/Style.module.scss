@@ -7,6 +7,14 @@
 
 .nav {
     font-size: 18px;
+    a {
+        text-decoration: none;
+        color: gray;
+        &:hover {
+            color: #971D62;
+        }
+    }
+    
 
     & > * {
         margin-left: 20px;
