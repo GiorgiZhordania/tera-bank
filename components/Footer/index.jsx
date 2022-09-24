@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaFacebookSquare, FaTwitterSquare, FaYoutube, FaInstagram } from 'react-icons/fa'
+import FooterNavigation from '../FooterNavigation'
 
 
 import Style from './Style.module.scss'
@@ -16,6 +17,9 @@ export default function Footer() {
                 <FaInstagram size="30px"  />
             </span>
         </div>
+        <FooterNavigation title='ჩვენს შესახებ' items={['საკონტაქტო ინფორმაცია', 'ჩვენი გუნდი', 'ტერაბანკის ისტორია']}/>
+        <FooterNavigation title='ჩვენს შესახებ' items={['საკონტაქტო ინფორმაცია', 'ჩვენი გუნდი', 'ტერაბანკის ისტორია']}/>
+        <FooterNavigation title='ჩვენს შესახებ' items={['საკონტაქტო ინფორმაცია', 'ჩვენი გუნდი', 'ტერაბანკის ისტორია']}/>
     </footer>
   )
 }

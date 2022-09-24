@@ -2,6 +2,8 @@
     background-color: #971D62;
     color: white;
     padding: 50px 140px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     .logos {
         display: flex;
@@ -10,7 +12,7 @@
 
         div {
             width: 250px;
-            height: 100px;
+            height: 70px;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
