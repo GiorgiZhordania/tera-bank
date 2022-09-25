@@ -23,7 +23,7 @@ export default function Header(props) {
   return (
     <header className={Style.header}>
       <Link href="/">
-        <Image src="/logo.png" alt="Logo" width={170} height={50} />
+        <Image className={Style.img} src="/logo.png" alt="Logo" width={170} height={50} />
       </Link>
       <nav className={Style.nav}>
         <Link href='/loans'>{t('loans')}</Link>
@@ -33,8 +33,8 @@ export default function Header(props) {
       <div className={Style.actions}>
         <Button>{t('teraPay')}</Button>
         <Button>{t('internetBank')}</Button>
-        <MdSearch color="#971D62" size={30} />
-        <MdPerson color="#971D62" size={30} />
+        <MdSearch className={Style.search} color="#971D62" size={30} />
+        <MdPerson className={Style.person} color="#971D62" size={30} />
         <Button onClick={changeLang}>
           {router.locale === "ka" ? "EN" : "KA"}
         </Button>

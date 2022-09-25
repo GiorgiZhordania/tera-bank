@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    img {
+        cursor: pointer;
+    }
 }
 
 .nav {
@@ -28,5 +32,12 @@
     & > * {
         margin-left: 10px;
     }
+    .person {
+        cursor: pointer;
+    }
+    .search {
+        cursor: pointer;
+    }
+    
 }
 
