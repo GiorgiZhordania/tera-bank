@@ -1,6 +1,6 @@
 import React from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { MdLocationOn } from 'react-icons/md'
+import { MdLocationOn,MdLaptop,MdHeadsetMic } from 'react-icons/md'
 
 import Styles from '../styles/CustomerLoans.module.scss'
 import Button from '../components/Button';
@@ -16,6 +16,7 @@ export default function CustomerLoans() {
                 <br /><br />
                 შენი ქონება ჩვენთვის მხოლოდ დამატებითი საშუალებაა, რომ უფრო დიდი მიზნის მიღწევაში დაგეხმაროთ. გამოიყენე უკვე არსებული ქონება იმისთვის, რომ უფრო მეტი მოიპოვო და ისარგებლე უზრუნველყოფილი სამომხმარებლო სესხით.
             </p>
+            <br /><br />
             <h2>პროდუქტის აღწერა და პირობები</h2>
             <div className={Styles.content}>
                 <div className={Styles.table}>
@@ -23,7 +24,10 @@ export default function CustomerLoans() {
                         <tbody>
                             <tr>
                                 <td>სესხის ოდენობა</td>
-                                <td>მინიმალური - 1,000 ლარი* მაქსიმალური - ინდივიდუალურად</td>
+                                <td>მინიმალური - 1,000 ლარი* 
+                                    <br/> 
+                                    მაქსიმალური - ინდივიდუალურად
+                                </td>
                             </tr>
                             <tr>
                                 <td>სესხის ვადა</td>
@@ -34,27 +38,30 @@ export default function CustomerLoans() {
                                 </td>
                             </tr>
                             <tr>
-                                <td>სესხის ოდენობა</td>
-                                <td>მინიმალური - 1,000 ლარი* მაქსიმალური - ინდივიდუალურად</td>
+                                <td>სესხის ვალუტა</td>
+                                <td>ლარი, აშშ დოლარი, ევრო</td>
                             </tr>
                             <tr>
-                                <td>სესხის ოდენობა</td>
-                                <td>მინიმალური - 1,000 ლარი* მაქსიმალური - ინდივიდუალურად</td>
+                                <td>ეფექტური საპროცენტო განაკვეთი</td>
+                                <td>ლარი - 17.60%-დან 
+                                    <br />
+                                    აშშ დოლარი -  10.35%-დან
+                                </td>
                             </tr>
                             <tr>
-                                <td>სესხის ოდენობა</td>
-                                <td>მინიმალური - 1,000 ლარი* მაქსიმალური - ინდივიდუალურად</td>
+                                <td>სესხის დაფარვის პირობა</td>
+                                <td>ყოველთვიური თანაბარი გადახდები</td>
                             </tr>
                             <tr>
-                                <td>სესხის ოდენობა</td>
-                                <td>მინიმალური - 1,000 ლარი* მაქსიმალური - ინდივიდუალურად</td>
+                                <td>სესხის უზრუნველყოფა</td>
+                                <td>უძრავი ან მოძრავი ქონება (ავტომანქანა)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div className={Styles.buttons}>
-                    <Button addon={<MdLocationOn size={24} />}>შეავსე ონლაინ</Button>
-                    <Button addon={<MdLocationOn size={24} />}>შეავსე ონლაინ</Button>
+                    <Button addon={<MdLaptop size={24} />}>შეავსე ონლაინ</Button>
+                    <Button addon={<MdHeadsetMic size={24} />}>შეავსე ონლაინ</Button>
                     <Button addon={<MdLocationOn size={24} />}>შეავსე ონლაინ</Button>
                 </div>
             </div>
