@@ -11,46 +11,62 @@ import PromoCard from '../components/PromoCard';
 export default function Loans({ imgSrc, title }) {
     return (
         <div className={Style.loans}>
-            <div className={Style.CustomerLoan}>
-                <CustomerLoan 
-                imgSrc="/photo.jpg" 
-                title="აიღე სამომხმარებლო სესხი მარტივად"/>
-            </div>
+            <section>
+                <SectionTitle title="სამომხმარებლო სესხი" />
+                <br />
+                <div>
+                    <CustomerLoan
+                        imgSrc="/photo.jpg"
+                        title="აიღე სამომხმარებლო სესხი მარტივად"
+                    />
+                </div>
+            </section>
             <br></br>
-
             <section className={Style.loanss}>
-              <SectionTitle title="იპოთეკური სესხები" actionTitle="იხილეთ ყველა" />
-             <br />
+                <SectionTitle title="იპოთეკური სესხები" actionTitle="იხილეთ ყველა" />
+                <br />
 
-             <div className={Style.loansList}>
-              <PromoCard
-              imgSrc="/Mask.jpg"
-              title="შეიძინე ბინა ისარგებლე სუბსიდიით"
-              />
-              <PromoCard
-              imgSrc="/chair.jpg"
-              title="იპოთეკური სესხი 12%-დან"
-              />
-            </div>
-        </section>
-
-            <div className={Style.CustomerLoan}>
-                <CustomerLoan 
-                imgSrc="/smile.jpg" 
-                />
-            </div>
+                <div className={Style.loansList}>
+                    <PromoCard
+                        imgSrc="/Mask.jpg"
+                        title="შეიძინე ბინა ისარგებლე სუბსიდიით"
+                    />
+                    <PromoCard
+                        imgSrc="/chair.jpg"
+                        title="იპოთეკური სესხი 12%-დან"
+                    />
+                </div>
+            </section>
+            <section>
+                <SectionTitle title="განვადება" />
+                <br />
+                <div>
+                    <CustomerLoan
+                        imgSrc="/smile.jpg"
+                        title="აიღე სამომხმარებლო სესხი მარტივად"
+                    />
+                </div>
+            </section>
             <br></br>
-            <div className={Style.CustomerLoans}>
-                <CustomerLoan 
-                imgSrc="/car.jpg" 
-                title="შეიძინე მანქანა
+            <section>
+                <SectionTitle title="ავტოგანვადება" />
+                <br />
+                <div className={Style.CustomerLoans}>
+                    <CustomerLoan
+                        imgSrc="/car.jpg"
+                        title="შეიძინე მანქანა
                 ტერაბანკის ავტოგანვადებით"/>
-            </div>
+                </div>
+            </section>
             <br></br>
-            <div className={Style.currency}>
-                <Currency />
-                <Currency />
-            </div>
+            <section>
+                <SectionTitle title="საუკეთესო კურსი" />
+                <br></br>
+                <div className={Style.currency}>
+                    <Currency />
+                    <Currency />
+                </div>
+            </section>
         </div>
     )
 }
