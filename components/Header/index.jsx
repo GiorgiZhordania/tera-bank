@@ -27,6 +27,7 @@ export default function Header(props) {
       </Link>
       <nav className={Style.nav}>
         <Link href='/loans'>{t('loans')}</Link>
+        <Link href='/customer-loans'>{t('customerLoans')}</Link>
         <Link href='/contact'>{t('contact')}</Link>
       </nav>
       <div className={Style.actions}>
