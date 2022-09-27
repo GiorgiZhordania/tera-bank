@@ -17,7 +17,7 @@ export default function Header(props) {
     router.push({
       route: router.pathname,
       query: router.query
-  }, router.asPath, { locale: router.locale === "ka" ? "en" : "ka" });
+    }, router.asPath, { locale: router.locale === "ka" ? "en" : "ka" });
   }
 
   return (
@@ -31,8 +31,12 @@ export default function Header(props) {
         <Link href='/contact'>{t('contact')}</Link>
       </nav>
       <div className={Style.actions}>
-        <Button>{t('teraPay')}</Button>
-        <Button>{t('internetBank')}</Button>
+        <Link href='https://terabank.ge/ge/applepay'>
+          <Button>{t('teraPay')}</Button>
+        </Link>
+        <Link href='https://ebanking.ge/login'>
+          <Button>{t('internetBank')}</Button>
+        </Link>
         <MdSearch className={Style.search} color="#971D62" size={30} />
         <MdPerson className={Style.person} color="#971D62" size={30} />
         <Button onClick={changeLang}>
