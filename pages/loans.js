@@ -7,6 +7,7 @@ import CustomerLoan from '../components/CustomerLoan'
 import SectionTitle from '../components/SectionTitle';
 import CustomerLoans from '../components/CustomerLoans';
 import PromoCard from '../components/PromoCard';
+import Link from 'next/link';
 
 export default function Loans({ imgSrc, title }) {
     return (
@@ -38,7 +39,9 @@ export default function Loans({ imgSrc, title }) {
                 </div>
             </section>
             <section>
+
                 <SectionTitle title="განვადება" />
+
                 <br />
                 <div>
                     <CustomerLoan
@@ -55,7 +58,7 @@ export default function Loans({ imgSrc, title }) {
                     <CustomerLoan
                         imgSrc="/car.jpg"
                         title="შეიძინე მანქანა
-                ტერაბანკის ავტოგანვადებით"/>
+                        ტერაბანკის ავტოგანვადებით"/>
                 </div>
             </section>
             <br></br>

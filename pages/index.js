@@ -8,6 +8,7 @@ import SectionTitle from '../components/SectionTitle'
 import CustomerLoan from '../components/CustomerLoan';
 import MobileApp from '../components/MobileApp'
 
+
 import Style from '../styles/IndexPageStyle.module.scss'
 
 export default function Home() {
@@ -83,25 +84,25 @@ export default function Home() {
         </section>
         <section>
           <SectionTitle title="სამომხმარებლო სესხი" />
-          <br/>
+          <br />
           <div>
             <CustomerLoan
-             imgSrc="/photo.jpg"
-             title="აიღე სამომხმარებლო სესხი მარტივად"
+              imgSrc="/photo.jpg"
+              title="აიღე სამომხმარებლო სესხი მარტივად"
             />
           </div>
         </section>
-        <section className={Style.Info}>       
-           <MobileApp 
+        <section className={Style.Info}>
+          <MobileApp
             title="ჩვენი მობილური აპლიკაცია"
             text="ულტრათანამედროვე დიზაინით შექმნილი,
               თქვენზე მორგებული და მინიმალისტური
               მობილური აპლიკაცია, რომლითაც 
               უკმაყოფილო ვერ დარჩებით."
             imgSrc="/12.jpg"
-            />
-                     
-        </section>        
+          />
+
+        </section>
       </main>
     </div>
   )

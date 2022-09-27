@@ -1,9 +1,10 @@
 import React from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { MdLocationOn,MdLaptop,MdHeadsetMic } from 'react-icons/md'
+import { MdLocationOn, MdLaptop, MdHeadsetMic } from 'react-icons/md'
 
 import Styles from '../styles/CustomerLoans.module.scss'
 import Button from '../components/Button';
+import Link from 'next/link';
 
 export default function CustomerLoans() {
     return (
@@ -24,8 +25,8 @@ export default function CustomerLoans() {
                         <tbody>
                             <tr>
                                 <td>სესხის ოდენობა</td>
-                                <td>მინიმალური - 1,000 ლარი* 
-                                    <br/> 
+                                <td>მინიმალური - 1,000 ლარი*
+                                    <br />
                                     მაქსიმალური - ინდივიდუალურად
                                 </td>
                             </tr>
@@ -43,7 +44,7 @@ export default function CustomerLoans() {
                             </tr>
                             <tr>
                                 <td>ეფექტური საპროცენტო განაკვეთი</td>
-                                <td>ლარი - 17.60%-დან 
+                                <td>ლარი - 17.60%-დან
                                     <br />
                                     აშშ დოლარი -  10.35%-დან
                                 </td>
@@ -60,9 +61,15 @@ export default function CustomerLoans() {
                     </table>
                 </div>
                 <div className={Styles.buttons}>
-                    <Button addon={<MdLaptop size={24} />}>შეავსე ონლაინ</Button>
-                    <Button addon={<MdHeadsetMic size={24} />}>შეავსე ონლაინ</Button>
-                    <Button addon={<MdLocationOn size={24} />}>შეავსე ონლაინ</Button>
+                    <Link href='https://online.terabank.ge/loans'>
+                        <Button addon={<MdLaptop size={24} />}>შეავსე ონლაინ</Button>
+                    </Link>
+                    <Link href='https://online.terabank.ge/loans'>
+                        <Button addon={<MdHeadsetMic size={24} />}>შეავსე ონლაინ</Button>
+                    </Link>
+                    <Link href='https://online.terabank.ge/loans'>
+                        <Button addon={<MdLocationOn size={24} />}>შეავსე ონლაინ</Button>
+                    </Link>
                 </div>
             </div>
         </div>

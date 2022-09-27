@@ -45,7 +45,7 @@ export default function Currency() {
                         currencies.map((item) => (
                             <li key={item.uid} onClick={() => setActiveTabUid(item.uid)}>
                                 {item.uid}
-                                { item.uid === activeTabUid && <span /> }
+                                {item.uid === activeTabUid && <span />}
                             </li>
                         ))
                     }
